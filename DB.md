@@ -52,14 +52,14 @@
 | id (PK)            | char(36)       | Primary Key                           |
 | question           | text           | FAQ Question                          |
 | answer             | long text      | FAQ Answer                            |
-| sports_tournament_id | int          | Foreign Key to related sports tournament |
+| sports_tournament_id | char(36)     | Foreign Key to related sports tournament |
 
 ## Table: `age_group_definitions`
 
 | Column Name       | Data Type | Description                   |
 |-------------------|-----------|-------------------------------|
-| id (PK)           | int       | Primary Key                   |
+| id (PK)           | char(36)       | Primary Key                   |
 | age_group_range   | string    | Age Group Range               |
-| sports_tournament_id | int   | Foreign Key to related sports tournament |
+| sports_tournament_id | char(36)   | Foreign Key to related sports tournament |
 
 
