@@ -40,9 +40,9 @@
 | phone_number         | string (unique)| Phone Number                    |
 | player_age           | int            | Age                             |
 | tshirt_size          | enum           | T-shirt Size                    |
-| ice_contact_phone    | string         | ICE Contact Phone               |
-| ice_contact_name     | string         | ICE Contact Name                |
-| ice_contact_type     | string         | ICE Contact Type                |
+| emergency_contact_phone    | string         | Emergency Contact Phone               |
+| emergency_contact_name     | string         | Emergency Contact Name                |
+| emergency_contact_type     | string         | Emergency Contact Type                |
 
 
 ## Table: `tournament_faqs`
