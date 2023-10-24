@@ -2,7 +2,7 @@
 
 | Column Name        | Data Type       | Description                     |
 |--------------------|----------------|---------------------------------|
-| id (PK)            | int            | Primary Key                     |
+| id (PK)            | char(36)       | Primary Key                     |
 | tournament_name    | string         | Tournament Name                 |
 | description        | text           | Tournament Description          |
 | capacity           | int            | Tournament Capacity             |
@@ -15,7 +15,7 @@
 
 | Column Name          | Data Type       | Description                     |
 |----------------------|----------------|---------------------------------|
-| id (PK)              | int            | Primary Key                     |
+| id (PK)              | char(36)       | Primary Key                     |
 | team_name            | string         | Team Name                       |
 | team_image           | string         | Team Image (nullable)           |
 | age_group            | string         | Age Group                       |
@@ -29,7 +29,7 @@
 
 | Column Name          | Data Type       | Description                     |
 |----------------------|----------------|---------------------------------|
-| id (PK)              | int            | Primary Key                     |
+| id (PK)              | char(36)       | Primary Key                     |
 | team_id (FK)         | int            | Team ID (Foreign Key to Teams)  |
 | player_name          | string         | Player Name                     |
 | player_email         | string         | Player Email                    |
@@ -46,7 +46,7 @@
 
 | Column Name        | Data Type       | Description                           |
 |--------------------|----------------|---------------------------------------|
-| id (PK)            | int            | Primary Key                           |
+| id (PK)            | char(36)       | Primary Key                           |
 | question           | text           | FAQ Question                          |
 | answer             | long text      | FAQ Answer                            |
 | sports_tournament_id | int          | Foreign Key to related sports tournament |
