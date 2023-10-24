@@ -1,15 +1,17 @@
 ## Table: `sports_tournaments`
 
-| Column Name        | Data Type       | Description                     |
-|--------------------|----------------|---------------------------------|
-| id (PK)            | char(36)       | Primary Key                     |
-| tournament_name    | string         | Tournament Name                 |
-| description        | text           | Tournament Description          |
-| capacity           | int            | Tournament Capacity             |
-| start_date         | date           | Tournament Start Date            |
-| end_date           | date           | Tournament End Date              |
-| image              | string         | Tournament Image (nullable)     |
-| terms_page_content | long text      | Terms and Conditions Content     |
+| Column Name           | Data Type       | Description                         |
+|-----------------------|----------------|-------------------------------------|
+| id (PK)               | int            | Primary Key                         |
+| tournament_name       | string         | Tournament Name                     |
+| description           | text           | Tournament Description              |
+| capacity              | int            | Tournament Capacity                 |
+| start_date            | date           | Tournament Start Date                |
+| end_date              | date           | Tournament End Date                  |
+| image                 | string         | Tournament Image (nullable)         |
+| terms_page_content    | long text      | Terms and Conditions Content         |
+| price_per_team        | decimal(10, 2) | Price per Team (in decimal format)   |
+| team_members_capacity | int            | Team Members Capacity                |
 
 ## Table: `teams`
 
