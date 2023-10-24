@@ -20,7 +20,7 @@
 | id (PK)              | char(36)       | Primary Key                     |
 | team_name            | string         | Team Name                       |
 | team_image           | string         | Team Image (nullable)           |
-| age_group            | string         | Age Group                       |
+| age_group_id(FK)     | char(36)        |Foreign Key to age_group_definitions|
 | belongs_to_club      | boolean        | Belongs to Club or Team         |
 | club_or_team_name    | string         | Name of Club or Team (nullable) |
 | team_status          | boolean        | Team Activation Status          |
