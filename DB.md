@@ -1,3 +1,16 @@
+## Table: `sports_tournaments`
+
+| Column Name        | Data Type       | Description                     |
+|--------------------|----------------|---------------------------------|
+| id (PK)            | int            | Primary Key                     |
+| tournament_name    | string         | Tournament Name                 |
+| description        | text           | Tournament Description          |
+| capacity           | int            | Tournament Capacity             |
+| start_date         | date           | Tournament Start Date            |
+| end_date           | date           | Tournament End Date              |
+| image              | string         | Tournament Image (nullable)     |
+| terms_page_content | long text      | Terms and Conditions Content     |
+
 ## Table: `teams`
 
 | Column Name          | Data Type       | Description                     |
@@ -28,18 +41,6 @@
 | ice_contact_name     | string         | ICE Contact Name                |
 | ice_contact_type     | string         | ICE Contact Type                |
 
-## Table: `sports_tournaments`
-
-| Column Name        | Data Type       | Description                     |
-|--------------------|----------------|---------------------------------|
-| id (PK)            | int            | Primary Key                     |
-| tournament_name    | string         | Tournament Name                 |
-| description        | text           | Tournament Description          |
-| capacity           | int            | Tournament Capacity             |
-| start_date         | date           | Tournament Start Date            |
-| end_date           | date           | Tournament End Date              |
-| image              | string         | Tournament Image (nullable)     |
-| terms_page_content | long text      | Terms and Conditions Content     |
 
 ## Table: `tournament_faqs`
 
