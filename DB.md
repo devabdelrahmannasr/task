@@ -36,8 +36,7 @@
 | player_name          | string         | Player Name                     |
 | player_email         | string         | Player Email                    |
 | phone_number         | string (unique)| Phone Number                    |
-| player_age_group     | string         | Age Group                       |
-| player_positions     | string         | Player Positions                |
+| player_age           | int            | Age                             |
 | tshirt_size          | string         | T-shirt Size                    |
 | ice_contact_phone    | string         | ICE Contact Phone               |
 | ice_contact_name     | string         | ICE Contact Name                |
@@ -52,3 +51,13 @@
 | question           | text           | FAQ Question                          |
 | answer             | long text      | FAQ Answer                            |
 | sports_tournament_id | int          | Foreign Key to related sports tournament |
+
+## Table: `age_group_definitions`
+
+| Column Name       | Data Type | Description                   |
+|-------------------|-----------|-------------------------------|
+| id (PK)           | int       | Primary Key                   |
+| age_group_range   | string    | Age Group Range               |
+| sports_tournament_id | int   | Foreign Key to related sports tournament |
+
+
