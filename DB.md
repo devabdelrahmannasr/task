@@ -23,21 +23,23 @@
 | age_group_id(FK)     | char(36)        |Foreign Key to age_group_definitions|
 | belongs_to_club      | boolean        | Belongs to Club or Team         |
 | club_or_team_name    | string         | Name of Club or Team (nullable) |
-| team_status          | boolean        | Team Activation Status          |
+| team_status          | enum('actvie','inactive','pending')        | Team Activation Status          |
+| payment_status       | boolean        | Team Payment Status             |
+| payment_ref_id       | string         | External Ref ID                 |
 | team_notes           | text           | Notes (nullable)                |
-| sports_tournament_id  | int            | Foreign Key to sports_tournaments|
+| sports_tournament_id  | char(36)      | Foreign Key to sports_tournaments|
 
 ## Table: `team_players`
 
 | Column Name          | Data Type       | Description                     |
 |----------------------|----------------|---------------------------------|
 | id (PK)              | char(36)       | Primary Key                     |
-| team_id (FK)         | int            | Team ID (Foreign Key to Teams)  |
+| team_id (FK)         | char(36)       | Team ID (Foreign Key to Teams)  |
 | player_name          | string         | Player Name                     |
 | player_email         | string         | Player Email                    |
 | phone_number         | string (unique)| Phone Number                    |
 | player_age           | int            | Age                             |
-| tshirt_size          | string         | T-shirt Size                    |
+| tshirt_size          | enum           | T-shirt Size                    |
 | ice_contact_phone    | string         | ICE Contact Phone               |
 | ice_contact_name     | string         | ICE Contact Name                |
 | ice_contact_type     | string         | ICE Contact Type                |
